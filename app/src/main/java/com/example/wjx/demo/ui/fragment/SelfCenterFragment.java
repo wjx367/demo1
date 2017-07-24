@@ -16,10 +16,10 @@ public class SelfCenterFragment extends BaseFragment {
     private TextView mTitle;
 
 
-    public static SelfCenterFragment newIntance(int i){
+    public static SelfCenterFragment newIntance(int i) {
         SelfCenterFragment newfragment = new SelfCenterFragment();
         Bundle bundle = new Bundle();
-        bundle.putInt("hello",i);
+        bundle.putInt("hello", i);
         newfragment.setArguments(bundle);
         return newfragment;
     }
@@ -38,10 +38,9 @@ public class SelfCenterFragment extends BaseFragment {
     @Override
     protected void initData() {
         Bundle bundle = getArguments();
-        type = bundle !=null ?bundle.getInt("hello") : 0 ;
-        mTitle.setText(type+"");
+        type = bundle != null ? bundle.getInt("hello") : 0;
+        mTitle.setText(type + "");
     }
-
 
 
 }
